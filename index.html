@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marsha's Travel Journal</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
+    body { background: #f3f9ff; color: #222; }
+
+    header {
+      background-color: #9badc8;
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+    }
+
+    header h1 { font-size: 2.5rem; font-weight: 700; }
+    header p { font-size: 1.2rem; margin-top: 0.5rem; color: #dce6ff; }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      padding: 3rem 1rem;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 320px;
+      text-align: center;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .card:hover { transform: translateY(-8px); box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card h2 { font-size: 1.5rem; color: #0a47a3; margin: 1rem 0 1.5rem; text-decoration: underline; }
+
+    @media (max-width: 768px) {
+      .card { width: 90%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Travel Journal</h1>
+    <p>My adventures during the holidays</p>
+  </header>
+
+  <section class="card-container">
+    <a href="hongkong.html" class="card">
+      <img src="WhatsApp_Image_2025-10-21_at_20.53.12_7217ad0d.jpg" alt="Hong Kong" />
+      <h2>HongKong</h2>
+    </a>
+
+    <a href="japan.html" class="card">
+      <img src="WhatsAppImage2025-10-21at20.49.12_c467350b.jpg" alt="Japan" />
+      <h2>Japan</h2>
+    </a>
+
+    <a href="france.html" class="card">
+      <img src="WhatsApp_Image_2025-10-21_at_21.10.28_58818163.jpg" alt="France" />
+      <h2>France</h2>
+    </a>
+  </section>
+</body>
+</html>
